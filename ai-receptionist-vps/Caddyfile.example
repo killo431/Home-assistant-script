@@ -1,0 +1,7 @@
+ai.yourdomain.com {
+    # Forward all traffic (including the wss:// media-stream upgrade) to
+    # the FastAPI app running on port 8000. Caddy handles Let's Encrypt
+    # SSL automatically, and reverse_proxy transparently upgrades
+    # WebSocket connections.
+    reverse_proxy localhost:8000
+}

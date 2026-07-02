@@ -1,0 +1,13 @@
+[Unit]
+Description=AI Receptionist Voice Server
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/ai-receptionist-vps
+ExecStart=/home/ubuntu/ai-receptionist-vps/venv/bin/uvicorn server:app --host 127.0.0.1 --port 8000
+EnvironmentFile=/home/ubuntu/ai-receptionist-vps/.env
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
