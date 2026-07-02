@@ -2,6 +2,9 @@
 
 _Multi-purpose cross-compile docker builder._
 
+> Also in this repo: [`ai-receptionist-vps/`](ai-receptionist-vps/) — a guide
+> and FastAPI/Pipecat server for deploying an AI phone receptionist on a VPS.
+
 ## GitHub Action
 
 You can use this repository as a GitHub action to test and/or publish your builds.
